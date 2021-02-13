@@ -11,3 +11,10 @@
  - Images must be in png format.
  - For simplicity you may use the session for long term storage.
  - JSON FORMAT: {"status":"success","message":"Image saved successfully.","url":"https://test.rxflodev.com/image-store/55c4d2369010c.png"}
+
+## Instructions
+
+ - The index.php file is the home page to upload and display the images.
+ - You can only upload PNG files
+ - The maximum size of the images will be 10Mb
+ - Require to have cookies enabled on your browser to store the history of uploaded images.
