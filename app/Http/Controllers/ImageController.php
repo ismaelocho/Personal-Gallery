@@ -50,19 +50,24 @@ class ImageController extends Controller
                 $values = json_decode($response, true);
 
                 # Save values in Sessions
-                Session::push('gallery', [
-                    $date => $values['url']
-                ]);  
+                if(isset($values['url'])){
+                    Session::push('gallery', [
+                        $date => $values['url']
+                    ]);  
+                }else{ # catch the errors
+                    $alert = "Error: ".$response;
+                    return view('error', compact("alert"));
+                }
               
                 return redirect('/');
         
             }else{
               $alert = "Invalid format or size";
-              return view('error', compact("alert"));;
+              return view('error', compact("alert"));
             }
           }else{
             $alert = "Without Image, please select a png image";
-            return view('error', compact("alert"));;
+            return view('error', compact("alert"));
           }
     }
 }
