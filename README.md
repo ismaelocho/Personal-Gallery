@@ -17,6 +17,13 @@
 * composer `^1.10.*`
 * laravel `^8.*`
 
+## Instructions 
+
+ - Clone repo
+ - composer update
+ - cp .env.example .env
+ - php artisan key:generate
+ - php artisan serve
 
 ## About Laravel
 
