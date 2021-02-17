@@ -12,9 +12,17 @@
  - For simplicity you may use the session for long term storage.
  - JSON FORMAT: {"status":"success","message":"Image saved successfully.","url":"https://test.rxflodev.com/image-store/55c4d2369010c.png"}
 
-## Instructions
+## Details 
 
- - The index.php file is the home page to upload and display the images.
- - You can only upload PNG files
- - The maximum size of the images will be 10Mb
- - Require to have cookies enabled on your browser to store the history of uploaded images.
+* composer `^1.10.*`
+* laravel `^8.*`
+
+
+## About Laravel
+
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects.
+
+
+## License Laravel
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
